@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-test
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: default
+  source:
+    chart: webapp1
+    repoURL: https://raw.githubusercontent.com/alexandrov-ua/helm-repo/main
+    targetRevision: 0.1.0
+    helm:
+      releaseName: my-web-app
+      valuesObject:
+        name: my-web-app
