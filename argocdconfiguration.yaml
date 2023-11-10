@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/alexandrov-ua/k8s-dev-env.git
     targetRevision: HEAD
-    path: Dev
+    path: dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
