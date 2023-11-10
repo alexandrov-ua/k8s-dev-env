@@ -11,7 +11,7 @@ spec:
   source:
     chart: webapp1
     repoURL: https://raw.githubusercontent.com/alexandrov-ua/helm-repo/main
-    targetRevision: 0.1.0
+    targetRevision: 1.16.1
     helm:
       releaseName: my-web-app
       valuesObject:
